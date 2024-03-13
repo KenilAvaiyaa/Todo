@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>make your day</title>
     <link rel="stylesheet" href="style.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="main">
         <h1>MAKE you TODO list <i class="ri-task-line"></i></h1>
         <div class="work">
-            <input type="text" name="text" id="text" placeholder="Enter your text">
-            <button  onclick="check()"><i class="ri-add-large-line"></i></button>
+            <input type="text" name="text" id="text" placeholder="Enter your text" onkeypress="enter()">
+            <button onclick="check()"><i class="ri-add-large-line"></i></button>
         </div>
-        <ul id="work_list" class="work_list" >
-            <li></li>
+        <ul id="worklist" class="worklist">
         </ul>
-    
+
     </div>
 
     <script src="scrip.js"></script>
 </body>
+
 </html>
